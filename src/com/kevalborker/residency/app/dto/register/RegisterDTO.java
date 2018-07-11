@@ -1,7 +1,6 @@
 package com.kevalborker.residency.app.dto.register;
 
 import java.io.Serializable;
-import java.math.BigInteger;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -46,7 +45,7 @@ public class RegisterDTO implements Serializable{
 	private int houseName;
 	
 	@Column(name="contactNo")
-	private BigInteger contactNo;
+	private String contactNo;
 	
 	@Column(name="numOfCars")
 	private int numOfCars;
@@ -127,11 +126,11 @@ public class RegisterDTO implements Serializable{
 		this.houseName = houseName;
 	}
 
-	public BigInteger getContactNo() {
+	public String getContactNo() {
 		return contactNo;
 	}
 
-	public void setContactNo(BigInteger contactNo) {
+	public void setContactNo(String contactNo) {
 		this.contactNo = contactNo;
 	}
 
