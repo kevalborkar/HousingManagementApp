@@ -34,7 +34,7 @@ public class LoginController {
 			
 			HttpSession	HttpSession = req.getSession(true);
 			HttpSession.setAttribute("UsrReg", dtofromservce);
-			HttpSession.setAttribute("contactNodb", dtofromservce.getContactNo());
+			HttpSession.setAttribute("contactNo", dtofromservce.getContactNo());
 			HttpSession.setAttribute("numOfCars", dtofromservce.getNumOfCars());
 
 			System.out.println("userLoginController in LoginController ended");

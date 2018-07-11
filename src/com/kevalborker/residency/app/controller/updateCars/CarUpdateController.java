@@ -6,7 +6,6 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -34,7 +33,7 @@ public class CarUpdateController {
 		if(httpSession != null) {
 			
 			// httpSession.setAttribute("contactNo", dtofromsession.getContactNo());
-			 String contactNo = (String)httpSession.getAttribute("contactNodb");
+			 String contactNo = (String)httpSession.getAttribute("contactNo");
 			 int newCarNum = (int)httpSession.getAttribute("numOfCars");
 			 //httpSession.setAttribute("numOfCars", dtofromsession.getNumOfCars());
 			 httpSession.setAttribute("UsrName", dtofromsession.getFirstName());

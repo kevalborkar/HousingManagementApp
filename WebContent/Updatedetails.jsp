@@ -15,7 +15,7 @@
 		<table>
 			<tr>
 				<td>Contact No</td>
-				<td><input type="text" name="contactNo" value="${contactNo}"/></td>
+				<td><input type="text" name="contactNo" value="${contactNo}" readonly="readonly"/></td>
 				
 			</tr>
 			<tr>
